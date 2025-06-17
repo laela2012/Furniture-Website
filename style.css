@@ -113,7 +113,8 @@ header {
     color: var(--main-color);
     text-transform: uppercase;
 }
-.shop-container {
+.shop-container,
+.new-arrival-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     gap: 1rem;
@@ -158,4 +159,28 @@ header {
     font-weight: 500;
     padding-left: 12px;
     color: var(--main-color);
+}
+
+.stars .bx {
+    color: var(--main-color);
+}
+
+.box .bx-cart {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   padding: 7px;
+   font-size: 20px;
+   color: #fff;
+   background: var(--main-color);
+   border-radius: 4px 0;
+}
+
+.box .bx-cart:hover {
+    background: #8fc53d;
+    cursor: pointer;
+}
+
+.new-arrival-container .box {
+    border-radius: 4px;
 }
