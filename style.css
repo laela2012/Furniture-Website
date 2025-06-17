@@ -99,3 +99,26 @@ header {
 .btn:hover {
     background:#8fc53d;
 }
+
+/* Product Content */
+
+.box-img {
+    width: 100%;
+}
+.title-price {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.title-price h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.box span {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-left: 12px;
+    color: var(--main-color);
+}
