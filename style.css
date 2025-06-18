@@ -229,6 +229,10 @@ header {
     filter: grayscale(1);
 }
 
+.brands-container img:hover {
+    filter: none;
+}
+
 /* NEWSLETTER */
 .newsletter {
     display: flex;
@@ -328,4 +332,88 @@ header {
 .copyright {
     padding: 20px;
     text-align: center;
+    font-size: 12px;
+}
+
+/* Responsive - Media Queries */
+@media (max-width: 991px) {
+    header {
+        padding: 18px 4%;
+    }
+    section {
+        padding: 50px 4%;
+    }
+}
+
+@media (max-width: 881px) {
+    .home-text h1{
+        font-size: 2rem;
+    }
+    .shop-container, 
+    .new-arrival-container {
+        grid-template-columns: repeat(auto-fit, minmax(218px, auto));
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 11px 4%;
+    }
+    #menu-icon {
+        display: initial;
+    }
+    header .navbar {
+        position: absolute;
+        top: -500px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        box-shadow: 0 4px 4px rgb(0 0 0 /10%);
+        transition: 0.2 ease;
+        text-align: center;
+    }
+
+    .navbar a{
+        padding: 1.5rem;
+        display: block;
+    }
+
+    .navbar a:hover {
+        background:var(--main-color);
+        color: #fff;
+    }
+
+    .navbar.active{
+        top: 100%;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .about-img {
+        padding-top: 2rem;
+        order: 2;
+    }
+}
+
+@media (max-width:491px) {
+    .home-text h1{
+        font-size: 1.7rem;
+    }
+    .shop-container, 
+    .new-arrival-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    }
+    .box .box-img {
+        height: 300px;
+    }
+    .news-box input {
+        width: 180px;
+    }
+    .about-text h2{
+        font-size: 1.2rem;
+    }
 }
